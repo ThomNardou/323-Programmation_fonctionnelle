@@ -1,8 +1,10 @@
-﻿// 4 players
+﻿
+/////////////////////////////////////////////////////////////// PROCEDURALE ///////////////////////////////////////////////////////////////
+// 4 players
 List<Player> players = new List<Player>()
 {
     new Player("Joe", 32),
-    new Player("Jack", 33),
+    new Player("Jack", 30),
     new Player("William", 37),
     new Player("Averell", 25)
 };
@@ -26,6 +28,11 @@ foreach (Player p in players)
 
 
 Console.WriteLine($"Le plus agé est {keyValuePairs.Last().Key.Name} qui a {keyValuePairs.Last().Value} ans");
+
+
+/////////////////////////////////////////////////////////////// fonctionnel ///////////////////////////////////////////////////////////////
+int age = players.Max(p => p.Age);
+
 
 Console.ReadKey();
 
