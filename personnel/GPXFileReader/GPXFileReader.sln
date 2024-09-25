@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPXFileReader", "GPXFileReader\GPXFileReader.csproj", "{15A629F4-F261-4309-9647-A32009C84B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15A629F4-F261-4309-9647-A32009C84B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A629F4-F261-4309-9647-A32009C84B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A629F4-F261-4309-9647-A32009C84B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A629F4-F261-4309-9647-A32009C84B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AC706A0-95CD-4371-9E4D-351241D0616E}
+	EndGlobalSection
+EndGlobal
