@@ -71,6 +71,8 @@ bool SquareHasBeenTested(int column, int row, bool[,] array)
 //
 //          2. Je peux sortir depuis une des cases où je peux aller (et où je ne suis pas encore allé)
 
+bool[,] way = new bool[8, 8];
+
 bool HaveAnyWay(int x, int y)
 {
     if (x == 7 && y == 7) return true;
@@ -87,7 +89,11 @@ bool HaveAnyWay(int x, int y)
         HaveAnyWay(x-1,y-1) ||
         HaveAnyWay(x+1,y-1) ||
         HaveAnyWay(x-1,y+1)
-     ) return true;
+     )
+    {
+        way[x,y] = true;
+        return true;
+    };
 
     return false;
 }
@@ -95,5 +101,8 @@ bool HaveAnyWay(int x, int y)
 // TODO Call the function and show the results
 Console.WriteLine("\n\n**********************************************************************************");
 Console.WriteLine(HaveAnyWay(0,0));
+Console.WriteLine("**********************************************************************************\n\n");
+
+DrawBoard(way);
 
 Console.ReadLine();
