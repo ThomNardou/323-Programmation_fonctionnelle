@@ -27,6 +27,9 @@ class Program
 
     static void Bob()
     {
+        // TODO use a methode to increment the totalLines code instead to use a variable 
+
+
         int myLineCounter = linesOfCode; // Bob starts working
         int workingHours = 0;
 
@@ -45,6 +48,10 @@ class Program
     // Method to be executed by thread2 - increments by 2 every 3 seconds
     static void Alice()
     {
+        // TODO use a methode to increment the totalLines code instead to use a variable 
+
+
+
         int myLineCounter = linesOfCode; // Alice starts working
         int workingHours = 0;
         while (workingHours < 7) // She has a 7-hours day ahead of her
